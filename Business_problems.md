@@ -62,9 +62,9 @@ Below is the complete set of industry-relevant, funnel‑focused, analytics‑re
 - Does offering more installment options improve conversion?
 - Which customer segments are most sensitive to delivery delays?
 
-# 🎯 Olist KPI Design Board (Complete & Practical)
+# 🎯 Olist KPI Design Board 
 
-Below are the Core Metrics, Diagnostic Metrics, and Actionable KPIs you must define.
+Below are the Core Metrics, Diagnostic Metrics, and Actionable KPIs i have defined.
 
 ## ✅ 1. Business Goal (Top-Level)
 
