@@ -1,51 +1,156 @@
-BUSINESS GOAL
+# BUSINESS GOAL
+Improve customer experience, increase revenue, and reduce operational inefficiencies.
+
+├── 1. CONVERSION & FUNNEL PERFORMANCE
+│   ├── 1.1 Funnel Volume Metrics
+│   │   ├── Orders Placed
+│   │   ├── Payments Approved
+│   │   ├── Orders Shipped
+│   │   ├── Orders Delivered
+│   │   └── Orders Reviewed
+│   │
+│   ├── 1.2 Funnel Efficiency Metrics
+│   │   ├── Conversion Rate (Placed → Delivered)
+│   │   ├── Stage-wise Drop-off Rate
+│   │   ├── % Cancellations
+│   │   └── Time Taken per Stage (Order → Payment → Ship → Delivery)
+│   │
+│   └── 1.3 Category-wise Funnel Insights
+│       ├── Category Conversion Rate
+│       ├── Category Drop-off Rate
+│       └── Category Funnel Bottlenecks
+
 │
-├── 1. Revenue Growth
+├── 2. LOGISTICS & DELIVERY PERFORMANCE
 │     │
-│     ├── GMV (Gross Merchandise Value)
-│     │     ├── Total Orders
+│     ├── 2.1 Delivery Speed
+│     │     ├── Average Delivery Time
+│     │     ├── Actual vs Estimated Delivery Time
+│     │     └── Delivery Time by Region/City/Seller
+│     │
+│     ├── 2.2 Delay Metrics
+│     │     ├── % Orders Delivered Late
+│     │     ├── Delay by State/City
+│     │     ├── Delay by Seller
+│     │     └── Delay by Product Category
+│     │
+│     └── 2.3 Logistics Impact
+│           ├── Delay → Review Score Impact
+│           ├── Delay → Cancellation Risk
+│           └── Estimated Financial Loss from Delays
+
+│
+├── 3. PAYMENT & REVENUE PERFORMANCE
+│     │
+│     ├── 3.1 Revenue Metrics
+│     │     ├── Total Revenue
+│     │     ├── GMV (Gross Merchandise Volume)
 │     │     ├── Average Order Value (AOV)
-│     │     └── Revenue by Category/Seller
+│     │     └── Revenue by Category / Seller
 │     │
-│     ├── Payment Metrics
-│     │     ├── Payment Method Share
-│     │     ├── Avg Installments
-│     │     └── Installment Revenue Contribution
+│     ├── 3.2 Payment Behavior
+│     │     ├── % Orders by Payment Method
+│     │     ├── Avg Installments per Order
+│     │     ├── Installment-based Conversion Rate
+│     │     └── High Order Value → Installments Pattern
 │     │
-│     └── Revenue Leakage
-│           ├── Cancellation Rate
-│           └── Return/Refund Rate
+│     └── 3.3 Loss & Leakage
+│           ├── Revenue Lost due to Cancellations
+│           ├── Loss due to Late Deliveries
+│           └── High-risk Sellers/Regions for Loss
+
 │
-├── 2. Operational Efficiency
+├── 4. CUSTOMER EXPERIENCE & REVIEW ANALYSIS
 │     │
-│     ├── Logistics KPIs
-│     │     ├── On-time Delivery Rate
-│     │     ├── Avg Delivery Time
-│     │     ├── Avg Delay (Actual–Estimated)
-│     │     ├── Shipping Distance
-│     │     └── Late Delivery % by Region
+│     ├── 4.1 Review Distribution
+│     │     ├── Avg Review Score
+│     │     ├── Score Distribution (1–5)
+│     │     └── % Low-rated Orders (1–2 stars)
 │     │
-│     └── Seller Performance
-│           ├── On-time Shipment Rate
-│           ├── Seller Review Score
-│           └── Complaint Rate
+│     ├── 4.2 Root Causes of Low Reviews
+│     │     ├── Delivery Delays
+│     │     ├── Product Quality Issues
+│     │     ├── Packaging/Damage Complaints
+│     │     └── Incorrect Product
+│     │
+│     └── 4.3 Seller-level Customer Experience
+│           ├── Avg Seller Rating
+│           ├── Complaints per Seller
+│           └── High Satisfaction Sellers
+
 │
-└── 3. Customer Experience & Retention
+├── 5. PRODUCT CATEGORY & SALES PERFORMANCE
+│     │
+│     ├── 5.1 Category Demand
+│     │     ├── Order Volume by Category
+│     │     ├── Revenue by Category
+│     │     └── Seasonal Trends
+│     │
+│     ├── 5.2 Category Risk
+│     │     ├── Cancellation Rate by Category
+│     │     ├── Refund/Return Rate by Category
+│     │     └── High-risk Product Types
+│     │
+│     └── 5.3 Category Satisfaction
+│           ├── Avg Review Score by Category
+│           └── % Low-rated SKUs per Category
+
+│
+├── 6. SELLER PERFORMANCE
+│     │
+│     ├── 6.1 Seller Contribution
+│     │     ├── Revenue per Seller
+│     │     ├── Order Volume per Seller
+│     │     └── Seller Market Share
+│     │
+│     ├── 6.2 Seller Operations
+│     │     ├── On-time Shipping Rate
+│     │     ├── Avg Handling Time
+│     │     ├── Seller Delay Impact
+│     │     └── Cancellation Rate per Seller
+│     │
+│     └── 6.3 Seller Quality
+│           ├── Avg Review Score per Seller
+│           ├── Complaints per Seller
+│           └── High Risk Sellers (delays + low score)
+
+│
+└── 7. CUSTOMER SEGMENTATION & RETENTION
       │
-      ├── Review Performance
-      │     ├── Avg Review Score
-      │     ├── Review Distribution (1–5)
-      │     └── % Low-rated Orders (<=2)
+      ├── 7.1 Customer Segments
+      │     ├── Segments by Geography
+      │     ├── Segments by Order Frequency
+      │     └── Segments by Spending Patterns
       │
-      ├── Funnel Experience
-      │     ├── Placed → Approved Rate
-      │     ├── Approved → Shipped Rate
-      │     └── Delivered → Reviewed Rate
+      ├── 7.2 Retention & Repeat Purchases
+      │     ├── Repeat Purchase Rate
+      │     ├── Time Between Purchases
+      │     ├── Category-driven Repeat Behavior
+      │     └── Region-wise Repeat Rate
       │
-      └── Customer Behavior
-            ├── Unique Customers / Month
-            ├── Repeat Customer Rate
-            └── Lifetime Value (LTV) 
+      └── 7.3 Customer Lifetime Value (LTV)
+            ├── LTV by Segment
+            ├── LTV by Category Preference
+            └── Churn-prone Customer Groups
+├── 1. CONVERSION & FUNNEL PERFORMANCE
+│   ├── 1.1 Funnel Volume Metrics
+│   │   ├── Orders Placed
+│   │   ├── Payments Approved
+│   │   ├── Orders Shipped
+│   │   ├── Orders Delivered
+│   │   └── Orders Reviewed
+│   │
+│   ├── 1.2 Funnel Efficiency Metrics
+│   │   ├── Conversion Rate (Placed → Delivered)
+│   │   ├── Stage-wise Drop-off Rate
+│   │   ├── % Cancellations
+│   │   └── Time Taken per Stage (Order → Payment → Ship → Delivery)
+│   │
+│   └── 1.3 Category-wise Funnel Insights
+│       ├── Category Conversion Rate
+│       ├── Category Drop-off Rate
+│       └── Category Funnel Bottlenecks
+
 
 # 📊 Olist KPI Tree (Based on Full Business Questions)
 
