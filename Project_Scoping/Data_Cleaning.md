@@ -17,35 +17,39 @@ Run:
 `PRAGMA table_info(table_name);`
 
 Check:
-No corrupted types
-No missing PK fields
-No inconsistent NULL constraints
+- No corrupted types
+- No missing PK fields
+- No inconsistent NULL constraints
 
 Tables included:
-customers
-orders
-order_items
-order_payments
-order_reviews
-sellers
-geolocation
-products
+- customers
+- orders
+- order_items
+- order_payments
+- order_reviews
+- sellers
+- geolocation
+- products
 category_translation
 
 ## 🔷 2. Primary Key Validation
 
 **Customers**
-customer_id → unique
-customer_unique_id → NOT unique (expected)
+- customer_id → unique
+- customer_unique_id → NOT unique (expected)
+  
 **Orders**
-order_id → unique
+- order_id → unique
+  
 **Order Items**
 Composite key:
-(order_id, order_item_id) → unique
+- (order_id, order_item_id) → unique
+  
 **Products**
-product_id → unique
+- product_id → unique
+  
 **Sellers**
-seller_id → unique
+- seller_id → unique
 
 Check using:
 `SELECT order_id, COUNT(*)
@@ -127,14 +131,20 @@ SET product_weight_g = (SELECT median_weight_by_category);`
 - Keep all (Brazilian market norms)
 
 **Freight Values**
+
 Flag extreme values:
+
 `sql 
 freight_value > (Q3 + 1.5 * IQR) `
+
 Keep but mark as outliers.
 
 **Delivery Time Outliers**
+
 Customers receiving items before they were shipped:
--Negative delivery times
+
+- Negative delivery times
+  
 Fix:
 `IF delivered_date < shipped_date → set delivered_date = shipped_date`
 
